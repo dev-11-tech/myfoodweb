@@ -1,0 +1,201 @@
+/* CSS reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* css variables */
+:root {
+  --navbar-heright: 59px;
+}
+/* logo design */
+.logo img {
+  height: 75px;
+  display: flex;
+}
+/* navbar style */
+#navbar {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: #cb202d;
+  display: flex;
+  z-index: -1;
+  opacity: 0.9;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  list-style: none;
+}
+#navbar ul li a {
+  display: block;
+  color: aliceblue;
+  font-size: 38 px;
+  font-family: cursive;
+  align-items: center;
+  margin: 8px;
+  padding: 5px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: red;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+#navbar input {
+  border-radius: 10px;
+  height: 0.01rem;
+  width: 25vh;
+  margin: 25px 350px;
+  padding: 10px;
+}
+/* home setioon */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 20px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  height: 600px;
+  background: url("burger-4953465_1920.jpg") no-repeat center center/cover;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.6;
+}
+#top {
+  color: rgb(rgb(240, 202, 202), green, blue);
+  font-size: 6vh;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20vh;
+  font-family: cursive;
+}
+/* service section */
+#services {
+  margin: 20px;
+  display: flex;
+  text-align: center;
+}
+#services-container h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+  margin-top: 21vh;
+}
+#services .box {
+  border: 2px solid red;
+  width: 350px;
+  padding: 15px;
+  background-color: rgb(236, 213, 170);
+  margin: 0px 25px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+.box img {
+  height: 150px;
+}
+#services .box p {
+  font-family: cursive;
+}
+/* client section */
+#client-section {
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 40px;
+  font-family: cursive;
+  margin-top: 0vh;
+  background: url(pexels-photo-1435895.jpeg);
+  width: 100%;
+  background-size: 50%;
+  height: 100%;
+  opacity: 0.6;
+}
+#client-section .h-primary center h1 {
+  text-align: center;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  width: 166px;
+  padding: 30px;
+  height: auto;
+}
+/* Contact us section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  background: url(pexels-jessica-lewis-creative-583841.jpg);
+  z-index: -1;
+  opacity: 0.7;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+#contact-box input,
+#cotact-box textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+#contac-box form {
+  width: 30%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+footer {
+  background-color: black;
+  color: aliceblue;
+  padding: 12px;
+}
+.h-seconadry {
+  font-family: cursive;
+  font-size: 2.3rem;
+  padding: 10px;
+}
+.btn {
+  border: 2px solid rgb(41, 53, 216);
+  padding: 10px;
+  background-color: rgb(224, 144, 161);
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
